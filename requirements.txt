@@ -1,0 +1,2 @@
+streamlit==1.32.0
+password-strength==0.0.4 
