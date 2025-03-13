@@ -23,9 +23,7 @@ This is a **Streamlit** web application that allows users to check the strength 
 ## Installation
 To run this app locally, follow these steps:
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/password-strength-checker.git
+
 cd password-strength-checker
 ```
 
