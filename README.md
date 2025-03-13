@@ -1,50 +1,59 @@
 # Password Strength Checker
 
-A web application built with Streamlit that helps users check the strength of their passwords. The application provides detailed feedback on password strength, including various metrics and suggestions for improvement.
+## Overview
+This is a **Streamlit** web application that allows users to check the strength of their passwords, generate strong passwords, and check if a password has been breached using the **Have I Been Pwned API**.
 
 ## Features
+- **Password Strength Checker**: Evaluates password strength based on length, uppercase letters, numbers, and special characters.
+- **Real-Time Feedback**: Displays password statistics and issues found.
+- **Breach Check**: Checks if the entered password has been compromised in past data breaches.
+- **Password Generator**: Creates strong passwords based on user preferences.
+- **Customizable Policy**: Users can adjust password strength requirements (minimum length, uppercase, numbers, and special characters).
+- **Password Tips**: Provides guidelines for creating strong passwords.
 
-- Password strength scoring (0-100)
-- Detailed password statistics
-- Visual strength indicator
-- Password requirements checking
-- Helpful password tips
-- User-friendly interface
-
-## Requirements
-
-- Python 3.7+
-- Streamlit
-- password-strength package
+## Technologies Used
+- **Python**
+- **Streamlit** (for UI)
+- **PasswordPolicy** (for password validation)
+- **PasswordStats** (for strength evaluation)
+- **Requests** (for API calls to check breaches)
+- **Secrets & String** (for password generation)
+- **Hashlib & Re** (for password security and pattern matching)
 
 ## Installation
+To run this app locally, follow these steps:
 
-1. Clone this repository or download the files
-2. Install the required packages:
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/password-strength-checker.git
+cd password-strength-checker
+```
+
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
-
-1. Run the Streamlit app:
+### 3. Run the Application
 ```bash
 streamlit run app.py
 ```
 
-2. Open your web browser and navigate to the URL shown in the terminal (typically http://localhost:8501)
-3. Enter a password in the input field to check its strength
-4. View the detailed analysis and suggestions
+## Usage
+- Enter a password to check its strength.
+- Generate a strong password with custom settings.
+- Check if your password has been breached.
+- View password security tips.
 
-## Password Requirements
+## API Reference
+This app uses the [Have I Been Pwned API](https://haveibeenpwned.com/API/v3) to check if a password has been compromised.
 
-The application checks for the following requirements:
-- Minimum length: 8 characters
-- At least 1 uppercase letter
-- At least 1 number
-- At least 1 special character
-- At least 1 non-letter character
+## Contributing
+Feel free to submit issues or contribute to the project. Fork the repository and create a pull request with your changes.
 
-## Security Note
+## License
+This project is licensed under the **MIT License**.
 
-This application runs locally on your machine and does not store or transmit any passwords. All password analysis is done client-side. 
+---
+### Author: *Mahnoor Ghaffar*
+
